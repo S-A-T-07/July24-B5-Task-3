@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+#navbarNav{
+    font-weight: 600;
+}
+
+/* .navbar{
+    background: #03500b;
+    /* background: rgba(0, 0, 0, 0.5); */
+        /* Semi-transparent background for blending */
+        /* backdrop-filter: blur(0px); */
+        /* Apply blur effect */
+    
+/* }  */
+
+/* .blur-bg {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    /* Fully transparent */
+    /* backdrop-filter: blur(10px); */
+    /* Apply the blur effect */
+    /* -webkit-backdrop-filter: blur(10px); */
+    /* For Safari */
+    /* border-radius: 10px; */
+    /* Optional: Add rounded corners */
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
+    /* Optional: A subtle border to define the shape */
+/* }  */
+/* Dropdown inside navbar */
+/* .dropdown-item {
+    color: #000000;
+    font-size: 14px;
+} */
+
+/* Landing Page Background */
+.landing-page {
+    background-image: url('./Images/Landingbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Enquiry Button */
+.enquiry-btn {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #066111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.enquiry-btn:hover {
+    background-color: #075003;
+}
+
+h1{
+    
+    text-align: center;
+    width: 100vw;
+    
+}
+/* MODAL */
+
+.modal-title {
+    margin-top: 5px;
+    margin-left: 70px;
+    margin-bottom: 0px;
+}
+
+#formcontent{
+    font-size: medium;
+    margin-left: 90px; 
+    border: none;
+    padding:0px;  
+}
+
+
+#preferenceSelect {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0.375rem 0.75rem;
+}
+
+#preferenceSelect:focus {
+    border: none;
+    box-shadow: none;
+}
+
+#messageTextarea {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0.375rem 0.75rem;
+}
+
+#messageTextarea:focus {
+    border: none;
+    box-shadow: none;
+}
+
+/* Modal Submit Button */
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+#custom-btn {
+    background-color: rgb(88, 13, 88);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: border-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.custom-btn:hover::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 4px solid rgb(33, 177, 225);
+    border-radius: 7px;
+    box-shadow: 0 0 0 0;
+    z-index: -1;
+}
+
+/* HoneyMoon */
+#honeymoon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#cimage {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#htitle{
+    text-align: center;
+}
+
+#hbody{
+    text-align: center;
+}
+
+#hcontent{
+    margin: 15px;
+}
+
+
+/* Book Now button */
+#hbtn{
+    background-color: rgb(62, 132, 203);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#hbtn:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* More packages button */
+#mpbutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#rbtn {
+    background-color: darkblue; 
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+#rbtn:hover {
+    background-color: red;
+    /* Changes button color to red on hover */
+    color: white;
+    /* Ensures text remains visible */
+}
+
+/* Carousel */
+.carousel-item img {
+    width: 100vw; 
+    height: 50vh;   
+    object-position: center; 
+}
+
+.ctitle {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(18, 65, 204);
+    text-shadow: -2px -2px 0 #fffdfd,  
+    2px -2px 0 #ffffff,
+    -2px 2px 0 #ffffff,
+    2px 2px 0 #ffffff;
+    position: absolute;
+    top: -50%;                
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+}
+
+/* Media */
+.media-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+.media-container iframe {
+    width: 500px;
+    height: 300px;
+}
+.media-container img {
+    height: 300px;
+    margin-left: auto;
+}
+
+/* NORTH INDIAN TOURS */
+
+.card {
+    position: relative;
+    overflow: hidden;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-wrapper {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-img-container {
+    padding: 0.9rem;
+    background-color: white;
+    height: 15rem;
+    display: flex;
+}
+
+ .card-img-overlay {
+     margin: 10px;
+     background-color:rgba(84, 191, 164, 0.8);
+     opacity: 0;
+     transition: opacity 0.3s ease;
+     align-items: center;
+     text-align: center;
+ }
+
+ .card:hover .card-img-overlay {
+     opacity: 1;
+     
+ }
+
+ .card-img-overlay h2 {
+     color: white;
+     margin: 0;
+     font-weight: bold;
+     font-size: 1.7rem;
+     
+ }
+
+ .card-img-overlay .price {
+     color: black;
+     font-size: 1.0rem;
+     font-weight: bold;
+ }
+
+ .card-img-overlay .price span {
+     color: darkblue;
+     font-weight: bold;
+ }
+
+ .card-img-overlay .btn {
+     color: white;
+     border-radius: 20px;
+     padding: 0.5rem 1rem;
+ }
+
+
+ 
+/* OUR PREMIUM FEATURES */
+.handwriting-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.75rem;
+    color: #f10606;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#pftrs {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.no-underline {
+    text-decoration: none;
+    color: purple;
+    align-items: center;
+}
+
+.special-card .card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.special-card .card-img-top {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    
+}
+
+.special-card .card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.special-card .card-text {
+    text-align: center;
+}
+#pftrs{
+    background-color: rgb(243, 235, 235);
+    text-align: center;
+    border-radius: 100px;
+    width: 250px;
+    height: 250px;
+}
+#prem{
+    width: 100px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 100px;
+    margin: 0 auto;
+    display: block;
+    padding: 5px;
+}
+#wrap{
+    width: 110px;
+    height: 110px;
+    background-color:antiquewhite ;
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 5px;
+}
+/* Customer Review */
+#cr{
+    width: 250px;
+    height: 150px;
+}
+#crchead{
+    margin-left: 40px;
+}
+#crcs{
+    width: 250px;
+    
+}
